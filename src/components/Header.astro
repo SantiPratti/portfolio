@@ -1,0 +1,59 @@
+<header>
+    <div class="logo-container">
+        <img src="/images/escudo.png" width="55px" alt="" >
+        <h2>Belgrano</h2>
+    </div>
+  
+    <nav>
+    <div class="menu-center">
+        <a href="#Inicio">Inicio</a>
+        <a href="#Asociate">Asociate</a>
+        <a href="#SobreNosotros">Sobre Nosotros</a>
+        <a href="#Contacto">Contacto</a>
+    </div>
+    </nav> 
+
+</header>
+
+
+<style>
+    
+    header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 78px;
+    background: #001F3F;
+    padding: 0 20px;
+    position: sticky;
+    top: 0;
+    }
+    .logo-container {
+        display: flex;
+        align-items: center;
+        color: white;
+        gap: 10px;
+        text-decoration: underline;
+    }
+    .menu-center {
+        display: flex;
+        justify-content: center;
+        flex: 1;
+        gap: 20px;
+    }
+    a { 
+        color: white;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 0 5px;
+        transition: 0.4s;
+    }
+   nav {
+    display: flex;
+    gap: 10px;
+  }
+  a:hover {
+     padding: 0 30px;
+    transition: padding 0.4s ease;
+  }
+</style>
