@@ -5,26 +5,31 @@
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/xicon" href="/images/favicon.ico" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Belgrano de Morse</title>
+
+		<title>Santiago Pratti</title>
 	</head>
 	<body>
+    <div class="retro-grid"></div>
 		<slot />
 	</body>
 </html>
 
 <style>
 	@import url('https://fonts.cdnfonts.com/css/open-sans');
+  
 *{
   font-family: 'Open Sans', sans-serif;
 }
 	html,
  body {
+  background: linear-gradient(135deg, #2d2d2d 0%, #1a1a1a 100%);
+  color: #f5f5f5;
   overflow-x: hidden;
   width: 100%;
   height: 100%;
   margin: 0 !important;
   padding: 0 !important;
-  background-color: #3A6D8C;
+  /*background-color: #3A6D8C;*/
   color: black;
   letter-spacing: 0.003em;
   line-height: 1.6;
@@ -33,4 +38,17 @@
   flex-direction: column;
   min-height: 100vh;
  }
+ .retro-grid {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                linear-gradient(rgba(0, 255, 255, 0.1) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 255, 255, 0.1) 1px, transparent 1px);
+            background-size: 50px 50px;
+            z-index: -1;
+            animation: gridPulse 4s ease-in-out infinite alternate;
+        }
 </style>

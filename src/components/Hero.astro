@@ -1,0 +1,26 @@
+---
+import Badge from "./Badge.astro"
+
+---
+
+<div class="Hero">
+    <img src="/images/santiago.jpg" alt="">
+    <Badge />
+</div>    
+
+<style>
+    .Hero {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+    }
+    img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+
+</style>
